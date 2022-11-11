@@ -26,7 +26,7 @@ require('./services/authorization.php');
             <a href="./pesanan.php" class="nav-link link-dark px-2">Pesanan</a>
         </li>
         <li class="nav-item">
-            <a href="./user-riwayat.php" class="nav-link link-dark px-2">Riwayat</a>
+            <a href="./driver-riwayat.php" class="nav-link link-dark px-2">Riwayat</a>
         </li>
         ';
       } else if ($role === 'admin') {
