@@ -10,7 +10,7 @@ $nohp = $form['nohp'];
 $address = $form['address'];
 
 if (empty($username) || empty($password) || empty($firstname) || empty($lastname) || empty($email) || empty($nohp) || empty($address)) {
-  header('Location: ../user-register.php');
+  header('Location: ../../user-register.php');
   return;
 }
 try {
@@ -19,4 +19,4 @@ try {
   echo "<SCRIPT>alert('Registrasi gagal');window.location='../../user-register.php'</SCRIPT>";
   return;
 }
-echo "<SCRIPT>alert('Registrasi sukses');window.location='../..//login.php'</SCRIPT>";
+echo "<SCRIPT>alert('Registrasi sukses');window.location='../../login.php'</SCRIPT>";
