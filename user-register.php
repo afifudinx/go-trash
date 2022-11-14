@@ -3,6 +3,7 @@ $access = 'unlogged';
 require('./components/header.php');
 require('./services/authorization.php');
 ?>
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,9 +18,10 @@ require('./services/authorization.php');
   <script src="sweetalert2.min.js"></script>
   <link rel="stylesheet" href="sweetalert2.min.css">
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  
+
   <title>User Register</title>
 </head>
+
 <body class="text-center">
   <main class="form-signin w-100 m-auto">
     <!-- <form method="POST" action="./services/user_registration_service.php">
@@ -60,7 +62,7 @@ require('./services/authorization.php');
       <p class="mt-5 mb-3 text-muted">© 2017–2022</p>
 
     </form> -->
-      <form method="POST" action="./services/user_registration_service.php">
+    <form method="POST" action="./services/user/user_registration_service.php">
       <h1 class="h3 mb-3 fw-normal"><b>Go-Trash</b></h1>
       <h1 class="h3 mb-3 fw-normal"><b>User Register</b></h1>
       <div class="form-floating">
@@ -68,28 +70,28 @@ require('./services/authorization.php');
         <label for="floatingInput">User Name</label>
       </div>
       <div class="form-floating">
-          <input type="password" class="form-control" name="password" id="password" placeholder="your password">
-          <label for="password">Password</label>
+        <input type="password" class="form-control" name="password" id="password" placeholder="your password">
+        <label for="password">Password</label>
       </div>
       <div class="form-floating">
-          <input type="text" class="form-control" name="firstname" id="firstname" placeholder="your firtname">
-          <label for="firstname">First Name</label>
+        <input type="text" class="form-control" name="firstname" id="firstname" placeholder="your firtname">
+        <label for="firstname">First Name</label>
       </div>
       <div class="form-floating">
-          <input type="text" class="form-control" name="lastname" id="lastname" placeholder="your lastname">
-          <label for="lastname">Last Name</label>
+        <input type="text" class="form-control" name="lastname" id="lastname" placeholder="your lastname">
+        <label for="lastname">Last Name</label>
       </div>
       <div class="form-floating">
-          <input type="email" class="form-control" name="email" id="email" placeholder="yourmail@domain.com">
-          <label for="email">Email</label>
+        <input type="email" class="form-control" name="email" id="email" placeholder="yourmail@domain.com">
+        <label for="email">Email</label>
       </div>
       <div class="form-floating">
-          <input type="text" class="form-control" name="nohp" id="nohp" placeholder="08XX">
-          <label for="nohp">No HP</label>
+        <input type="text" class="form-control" name="nohp" id="nohp" placeholder="08XX">
+        <label for="nohp">No HP</label>
       </div>
       <div class="form-floating">
-          <input type="text" class="form-control" name="address" id="address" placeholder="your address">
-          <label for="address">Address</label>
+        <input type="text" class="form-control" name="address" id="address" placeholder="your address">
+        <label for="address">Address</label>
       </div>
 
       <button class="w-100 btn btn-lg btn-primary" id="tombol" name="submit" type="submit">Masuk</button>
