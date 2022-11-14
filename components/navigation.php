@@ -83,7 +83,7 @@ require('./services/authorization.php');
                 Akun
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./user-profil.php">Profil</a></li>
+                <li><a class="dropdown-item" href="./user-profile.php">Profil</a></li>
                 <li><a class="dropdown-item" href="./services/logout_service.php">Logout</a></li>
             </ul>
         </li>
@@ -95,7 +95,7 @@ require('./services/authorization.php');
                 Akun
             </a>
             <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="./driver-profil.php">Profil</a></li>
+                <li><a class="dropdown-item" href="./driver-profile.php">Profil</a></li>
                 <li><a class="dropdown-item" href="./services/logout_service.php">Logout</a></li>
             </ul>
         </li>
