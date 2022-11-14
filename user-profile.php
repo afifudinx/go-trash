@@ -1,11 +1,7 @@
-<!-- Disini akan ditampilkan profil dengan bentuk form yang bisa langsung di update -->
-
-<!-- Available actions:
-1. Update profil -->
-
 <?php
 $access = 'users';
 require('./components/header.php');
+require('./services/user/profile_service.php');
 ?>
 
 <body>
@@ -19,6 +15,38 @@ require('./components/header.php');
       </a>
     </div>
   </header>
+  <main class="container">
+
+    <form method="POST" action="./services/user/update_profile_service.php">
+      <div class="form-floating">
+        <input type="password" class="form-control" name="password" id="password" placeholder="your password">
+        <label for="password">Password</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" name="firstname" id="firstname" placeholder="your firtname" value="<?php echo "$firstname" ?>">
+        <label for="firstname">First Name</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" name="lastname" id="lastname" placeholder="your lastname" value="<?php echo "$lastname" ?>">
+        <label for="lastname">Last Name</label>
+      </div>
+      <div class="form-floating">
+        <input type="email" class="form-control" name="email" id="email" placeholder="yourmail@domain.com" value="<?php echo "$email" ?>">
+        <label for="email">Email</label>
+      </div>
+      <div class="form-floating">
+        <input type="text" class="form-control" name="nohp" id="nohp" placeholder="08XX" value="<?php echo "$nohp" ?>">
+        <label for="nohp">No HP</label>
+      </div>
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control" name="address" id="address" placeholder="your address" value="<?php echo "$address" ?>">
+        <label for="address">Address</label>
+      </div>
+
+      <button class="w-100 btn btn-lg btn-primary" type="submit">Update Profile</button>
+
+    </form>
+  </main>
 </body>
 
 <?php
