@@ -66,8 +66,8 @@ require('./services/authorization.php');
       <h1 class="h3 mb-3 fw-normal"><b>Go-Trash</b></h1>
       <h1 class="h3 mb-3 fw-normal"><b>User Register</b></h1>
       <div class="form-floating">
-        <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" name="userName">
-        <label for="floatingInput">User Name</label>
+        <input type="text" class="form-control" id="username" placeholder="name@example.com" name="username">
+        <label for="username">User Name</label>
       </div>
       <div class="form-floating">
         <input type="password" class="form-control" name="password" id="password" placeholder="your password">
@@ -94,7 +94,7 @@ require('./services/authorization.php');
         <label for="address">Address</label>
       </div>
 
-      <button class="w-100 btn btn-lg btn-primary" id="tombol" name="submit" type="submit">Masuk</button>
+      <button class="w-100 btn btn-lg btn-primary" id="tombol" name="submit" type="submit">Daftar</button>
       <p class="buatAkun">Sudah Punya Akun? <a href="./login.php">Masuk</a></p>
     </form>
   </main>
