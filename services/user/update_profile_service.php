@@ -15,6 +15,7 @@ if (empty($username) || empty($password) || empty($firstname) || empty($lastname
 }
 try {
   $data = mysqli_query($conn, "update users set password='$password', firstname='$firstname', lastname='$lastname', email='$email', nohp='$nohp', address='$address' where username='$username';");
+  setcookie("password", $password, time() + (10 * 365 * 24 * 60 * 60), "/");
 } catch (\Throwable $th) {
   echo "<SCRIPT>alert('Update profile gagal');window.location='../../user-profile.php'</SCRIPT>";
   return;

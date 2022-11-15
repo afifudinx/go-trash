@@ -22,7 +22,7 @@ require('./services/admin/fetch_driver_service.php');
       $email = $driver['email'];
       $nohp = $driver['nohp'];
       echo "
-      <div class='card'>
+      <div class='card mb-2'>
         <div class='card-header'>
           $username
         </div>

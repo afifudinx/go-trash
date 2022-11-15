@@ -22,7 +22,7 @@ require('./services/admin/fetch_user_service.php');
       $email = $user['email'];
       $address = $user['address'];
       echo "
-      <div class='card'>
+      <div class='card mb-2'>
         <div class='card-header'>
           $username
         </div>
