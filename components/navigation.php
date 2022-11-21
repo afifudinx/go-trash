@@ -11,7 +11,7 @@ require('./services/authorization.php');
             <a href="./" class="nav-link link-dark px-2 active">Home</a>
         </li>
         <li class="nav-item">
-            <a href="./pesan.php" class="nav-link link-dark px-2">Pesan</a>
+            <a href="./user-pesan.php" class="nav-link link-dark px-2">Pesan</a>
         </li>
         <li class="nav-item">
             <a href="./user-riwayat.php" class="nav-link link-dark px-2">Riwayat</a>
@@ -23,7 +23,7 @@ require('./services/authorization.php');
             <a href="./" class="nav-link link-dark px-2 active">Home</a>
         </li>
         <li class="nav-item">
-            <a href="./pesanan.php" class="nav-link link-dark px-2">Pesanan</a>
+            <a href="./driver-pesanan.php" class="nav-link link-dark px-2">Pesanan</a>
         </li>
         <li class="nav-item">
             <a href="./driver-riwayat.php" class="nav-link link-dark px-2">Riwayat</a>
@@ -35,13 +35,13 @@ require('./services/authorization.php');
             <a href="./" class="nav-link link-dark px-2 active">Home</a>
         </li>
         <li class="nav-item">
-            <a href="./data-user.php" class="nav-link link-dark px-2">Data User</a>
+            <a href="./admin-user.php" class="nav-link link-dark px-2">Data User</a>
         </li>
         <li class="nav-item">
-            <a href="./data-driver.php" class="nav-link link-dark px-2">Data Driver</a>
+            <a href="./admin-driver.php" class="nav-link link-dark px-2">Data Driver</a>
         </li>
         <li class="nav-item">
-            <a href="./data-transaksi.php" class="nav-link link-dark px-2">Data Transaksi</a>
+            <a href="./admin-transaksi.php" class="nav-link link-dark px-2">Data Transaksi</a>
         </li>
         ';
       } else {

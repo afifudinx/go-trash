@@ -14,7 +14,7 @@ if (empty($name) || empty($nohp) || empty($type) || empty($address) || empty($de
 try {
   $data = mysqli_query($conn, "insert into transactions (name, user_username, nohp, type, address, description) values ('$name', '$username', '$nohp', '$type', '$address', '$description');");
 } catch (\Throwable $th) {
-  echo "<SCRIPT>alert('Transaksi gagal');window.location='../../pesan.php'</SCRIPT>";
+  echo "<SCRIPT>alert('Transaksi gagal');window.location='../../user-pesan.php'</SCRIPT>";
   return;
 }
 echo "<SCRIPT>alert('Transaksi sukses');window.location='../../user-riwayat.php'</SCRIPT>";
