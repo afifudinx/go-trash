@@ -1,8 +1,3 @@
-<html>
-<style>
-  body{
-    background-color: whitesmoke;
-</style>
 <?php
 $access = 'users';
 require('./components/header.php');
