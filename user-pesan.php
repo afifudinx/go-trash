@@ -7,7 +7,7 @@ require('./components/header.php');
   <?php
   require('./components/navigation.php');
   ?>
-  <header style="background-color : #A4B48C" class="py-3 mb-4 border-bottom">
+  <header style="background-color : #F4E3D6" class="py-3 mb-4 border-bottom">
     <div class="container">
       <a class="px-2 text-dark text-decoration-none">
         <span><b>Masukkan Pesanan Anda</b></span>
