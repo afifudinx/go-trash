@@ -1,3 +1,8 @@
+<html>
+<style>
+  body{
+    background-color: whitesmoke;
+</style>
 <?php
 $access = 'users';
 require('./components/header.php');
@@ -7,14 +12,14 @@ require('./components/header.php');
   <?php
   require('./components/navigation.php');
   ?>
-  <header class="py-3 mb-4 border-bottom">
+  <header style="background-color : #A4B48C" class="py-3 mb-4 border-bottom">
     <div class="container">
       <a class="px-2 text-dark text-decoration-none">
-        <span class="fs-4">Pesan</span>
+        <span><b>Masukkan Pesanan Anda</b></span>
       </a>
     </div>
   </header>
-  <div class="container px-4">
+  <div class="container px-5">
     <form action="./services/user/pesan_service.php" method="POST">
       <div class="mb-3">
         <label for="name" class="form-label">Nama</label>
@@ -42,7 +47,7 @@ require('./components/header.php');
       </div>
       <div class="mb-3">
         <label for="description" class="form-label">Deskripsi</label>
-        <textarea class="form-control" name="description" id="description" name="description" cols="30" rows="10" aria-describedby="descriptionHelp"></textarea>
+        <textarea class="form-control" name="description" id="description" name="description" cols="30" rows="3" aria-describedby="descriptionHelp"></textarea>
         <div id="descriptionHelp" class="form-text">Catatan singkat untuk driver</div>
       </div>
       <button type="submit" class="btn btn-primary">Submit</button>
