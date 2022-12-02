@@ -8,10 +8,10 @@ require('./components/header.php');
   <?php
   require('./components/navigation.php');
   ?>
-  <header class="py-3 mb-4 border-bottom">
+  <header style="background-color : #F4E3D6" class="py-3 mb-4 border-bottom">
     <div class="container">
       <a class="px-2 text-dark text-decoration-none">
-        <span class="fs-4">Riwayat Pemesanan</span>
+        <span><b>Riwayat Pemesanan</b></span>
       </a>
     </div>
   </header>
