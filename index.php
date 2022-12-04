@@ -3,20 +3,6 @@ $access = 'all';
 require('./components/header.php');
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <link rel="stylesheet" href="assets/css/home1.css">
-    <link rel="stylesheet" href="assets/css/home2.css">
-    <link rel="stylesheet" href="assets/css/home3.css">
-    <link rel="stylesheet" href="assets/css/home4.css">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/home1.css">
-
-    <!-- Load fonts style after rendering the layout styles -->
-    <link rel="stylesheet" href="assets/css/home5.css">
-
-</head>
 <body>
   <?php
   require('./components/navigation.php');
@@ -146,4 +132,3 @@ require('./components/header.php');
 <?php
 require('./components/footer.php')
 ?>
-</html>
