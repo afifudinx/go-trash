@@ -16,38 +16,50 @@ require('./services/authorization.php');
         <li class="nav-item">
             <a href="./user-riwayat.php" class="nav-link link-dark px-2">Riwayat</a>
         </li>
+        <li class="nav-item">
+            <a href="./informasi.php" class="nav-link link-dark px-2">Informasi</a>
+        </li>
         ';
       } else if ($role === 'drivers') {
         echo '
         <li class="nav-item">
-            <a href="./" class="nav-link link-dark px-2 active">Home</a>
+        <a href="./" class="nav-link link-dark px-2 active">Home</a>
         </li>
         <li class="nav-item">
-            <a href="./driver-pesanan.php" class="nav-link link-dark px-2">Pesanan</a>
+        <a href="./driver-pesanan.php" class="nav-link link-dark px-2">Pesanan</a>
         </li>
         <li class="nav-item">
-            <a href="./driver-riwayat.php" class="nav-link link-dark px-2">Riwayat</a>
+        <a href="./driver-riwayat.php" class="nav-link link-dark px-2">Riwayat</a>
+        </li>
+        <li class="nav-item">
+            <a href="./informasi.php" class="nav-link link-dark px-2">Informasi</a>
         </li>
         ';
       } else if ($role === 'admin') {
         echo '
         <li class="nav-item">
-            <a href="./" class="nav-link link-dark px-2 active">Home</a>
+        <a href="./" class="nav-link link-dark px-2 active">Home</a>
         </li>
         <li class="nav-item">
             <a href="./admin-user.php" class="nav-link link-dark px-2">Data User</a>
+            </li>
+        <li class="nav-item">
+        <a href="./admin-driver.php" class="nav-link link-dark px-2">Data Driver</a>
         </li>
         <li class="nav-item">
-            <a href="./admin-driver.php" class="nav-link link-dark px-2">Data Driver</a>
+        <a href="./admin-transaksi.php" class="nav-link link-dark px-2">Data Transaksi</a>
         </li>
         <li class="nav-item">
-            <a href="./admin-transaksi.php" class="nav-link link-dark px-2">Data Transaksi</a>
+            <a href="./admin-informasi.php" class="nav-link link-dark px-2">Data Informasi</a>
         </li>
         ';
       } else {
         echo '
         <li class="nav-item">
             <a href="#" class="nav-link link-dark px-2 active">Home</a>
+        </li>
+        <li class="nav-item">
+            <a href="./informasi.php" class="nav-link link-dark px-2">Informasi</a>
         </li>
         ';
       }

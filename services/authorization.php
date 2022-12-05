@@ -14,33 +14,30 @@ if (empty($username) || empty($password) || empty($role)) {
   $username = '';
   $password = '';
   $role = '';
-  return;
-}
-$data = mysqli_query($conn, "select * from $role where username='$username' ");
-$data = mysqli_fetch_array($data);
-if (empty($data)) {
-  unset($_COOKIE['username']);
-  setcookie('username', null, -1, '/');
-  unset($_COOKIE['password']);
-  setcookie('password', null, -1, '/');
-  unset($_COOKIE['role']);
-  setcookie('role', null, -1, '/');
-  $username = '';
-  $password = '';
-  $role = '';
-  return;
-}
-if ($password != $data['password']) {
-  unset($_COOKIE['username']);
-  setcookie('username', null, -1, '/');
-  unset($_COOKIE['password']);
-  setcookie('password', null, -1, '/');
-  unset($_COOKIE['role']);
-  setcookie('role', null, -1, '/');
-  $username = '';
-  $password = '';
-  $role = '';
-  return;
+} else {
+  $data = mysqli_query($conn, "select * from $role where username='$username' ");
+  $data = mysqli_fetch_array($data);
+  if (empty($data)) {
+    unset($_COOKIE['username']);
+    setcookie('username', null, -1, '/');
+    unset($_COOKIE['password']);
+    setcookie('password', null, -1, '/');
+    unset($_COOKIE['role']);
+    setcookie('role', null, -1, '/');
+    $username = '';
+    $password = '';
+    $role = '';
+  } else if ($password != $data['password']) {
+    unset($_COOKIE['username']);
+    setcookie('username', null, -1, '/');
+    unset($_COOKIE['password']);
+    setcookie('password', null, -1, '/');
+    unset($_COOKIE['role']);
+    setcookie('role', null, -1, '/');
+    $username = '';
+    $password = '';
+    $role = '';
+  }
 }
 if ($role === 'users' && !in_array($access, ['all', 'users'])) {
   header('Location: ./index.php');
