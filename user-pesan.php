@@ -1,6 +1,7 @@
 <?php
 $access = 'users';
 require('./components/header.php');
+require('./services/get_informasi.php');
 ?>
 
 <body>
@@ -29,9 +30,11 @@ require('./components/header.php');
       <label for="type" class="form-label">Tipe barang</label>
       <div class="form-floating mb-3">
         <select class="form-select" id="type" name="type" aria-label="type" aria-describedby="typeHelp">
-          <option value="plastik" selected>Plastik</option>
-          <option value="kertas">Kertas</option>
-          <option value="besi">Besi</option>
+          <?php foreach ($informasis as $informasi) {
+            $nama = $informasi['nama'];
+            $id = $informasi['id'];
+            echo "<option value='$id' selected>$nama</option>";
+          } ?>
         </select>
         <label for="type">Tipe barang</label>
       </div>

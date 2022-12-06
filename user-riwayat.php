@@ -23,7 +23,7 @@ require('./components/header.php');
       $name = $transaction['name'];
       $driver_username = $transaction['driver_username'];
       $nohp = $transaction['nohp'];
-      $type = $transaction['type'];
+      $type = $transaction['nama'];
       $address = $transaction['address'];
       $trx_date = $transaction['trx_date'];
       $est = $transaction['est'];

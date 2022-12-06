@@ -30,9 +30,7 @@ require('./components/header.php');
       <label for="type" class="form-label">Tipe barang</label>
       <div class="form-floating mb-3">
         <select class="form-select" id="type" name="type" aria-label="type" aria-describedby="typeHelp" value="<?php echo $transaction['type'] ?>" disabled>
-          <option value="plastik" selected>Plastik</option>
-          <option value="kertas">Kertas</option>
-          <option value="besi">Besi</option>
+          <option value="<?php echo $transaction['nama'] ?>" selected><?php echo $transaction['nama'] ?></option>
         </select>
         <label for="type">Tipe barang</label>
       </div>
