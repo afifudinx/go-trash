@@ -25,8 +25,6 @@ require('./components/header.php');
         </tr>
       </thead>
       <tbody>
-
-
         <?php
         foreach ($informasis as $informasi) {
           $id = $informasi['id'];
