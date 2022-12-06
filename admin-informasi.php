@@ -44,7 +44,7 @@ require('./components/header.php');
         ?>
       </tbody>
     </table>
-    <a class="btn btn-success" href='./admin-informasi-add.php'>Tambah Informasi</a>
+    <a class="btn btn-info" href='./admin-informasi-add.php'>Tambah Informasi</a>
   </div>
 </body>
 
