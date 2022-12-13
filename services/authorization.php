@@ -2,13 +2,13 @@
 require('./services/db_service.php');
 
 if (!isset($_COOKIE['username']) || !isset($_COOKIE['password']) || !isset($_COOKIE['role'])) {
-  $username = $_COOKIE['username'];
-  $password = $_COOKIE['password'];
-  $role = $_COOKIE['role'];
-} else {
   $username = '';
   $password = '';
   $role = '';
+} else {
+  $username = $_COOKIE['username'];
+  $password = $_COOKIE['password'];
+  $role = $_COOKIE['role'];
 }
 if (empty($username) || empty($password) || empty($role)) {
   unset($_COOKIE['username']);
